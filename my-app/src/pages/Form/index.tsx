@@ -1,11 +1,11 @@
 import React from 'react'
-import Button from '../../styled-guide/components/common/Button'
+import Button from '../../components/common/Button'
 import { FormPageContainer } from './styles'
 
 const FormPage = () => {
   return (
     <FormPageContainer>
-        <Button $type="disabled" content='Submit' />
+        <Button $type="primary" width='100px' padding='10px'>Submit</Button>
     </FormPageContainer>
   )
 }
