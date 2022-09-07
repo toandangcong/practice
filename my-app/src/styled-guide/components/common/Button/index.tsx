@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import { StyledButton, StyledButtonProps } from "./styles";
 
-const StyledButton = () => {
-  return (
-    <button>abc</button>
-  )
+interface Props extends StyledButtonProps {
+  content: string;
 }
 
-export default StyledButton
+const Button = ({ $type = "primary", $width, $padding, content }: Props) => {
+  return (
+    <StyledButton $type={$type} $width={$width} $padding={$padding}>
+      {content}
+    </StyledButton>
+  );
+};
+
+export default Button;
