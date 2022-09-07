@@ -1,8 +1,12 @@
 import React from 'react'
+import Button from '../../styled-guide/components/common/Button'
+import { FormPageContainer } from './styles'
 
 const FormPage = () => {
   return (
-    <div>form page</div>
+    <FormPageContainer>
+        <Button $type="disabled" content='Submit' />
+    </FormPageContainer>
   )
 }
 
